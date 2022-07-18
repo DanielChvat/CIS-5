@@ -1,1 +1,1 @@
-Where project submisssions and versions will go
+Where project submisssion and versions will go
