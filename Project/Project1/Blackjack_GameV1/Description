@@ -1,0 +1,13 @@
+This version has random card deck generation to a file and some basic input and output. Still missing the ability to actually play the game.
+
+Things to add:
+-Ability to draw cards for both dealer and Player
+-Betting System
+-Payouts
+-Chose wheter or not to play again
+-Conversions from face cards to actual Numbers (K->10)
+-Ace conversion from 11 to 1
+-Hit Stay System
+-Ability to Lose/Win
+-Other constructs required for project
+-Possibly some kind of text based graphics?
