@@ -1,0 +1,7 @@
+Things added:
+-Dealer card generation
+-Ability to allow player to grab cards from the deck
+-Conversion from cards to card values
+-Win/Lose State
+-Bet Payouts
+-Way to lose the game
