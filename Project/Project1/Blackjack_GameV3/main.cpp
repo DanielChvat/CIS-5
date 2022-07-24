@@ -55,7 +55,7 @@ int main(){
     cin>>money;
     strtMny=money;
     //Ensure the player is not entering negative amounts of money
-    while((money<0)){
+    while(money<0){
         cout<<money<<" Is Not a Valid Amount of Money"<<endl;
         cout<<"Input the Amount of Money You Wish to Play With"<<endl;
         cin>>money;
