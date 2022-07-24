@@ -191,7 +191,7 @@ int main(){
             cout<<"How Much Would You Like to Bet on This Game?"<<endl;
             cin>>bet; 
             //Check if the bet is valid
-            while(bet>money){
+            while(bet>money || bet<0){
                 cout<<"You Don't Have Enough Money to Make That Bet!"<<endl;
                 cout<<"Please Enter How Much You Wish to Bet:"<<endl;
                 cin>>bet;
