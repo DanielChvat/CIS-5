@@ -24,7 +24,7 @@ const unsigned char PERCENT=100;
 //Execution begins here
 int main(){
     //Initialize the Random Number Seed
-    srand(time(0));
+    srand(static_cast<unsigned int>(time(0)));
     //Declare Variables
     bool win; //If the player has won or lost
     const int NCARDS=52;//Number of Cards In the Deck
@@ -197,7 +197,7 @@ int main(){
                 cin>>bet;
             }
             //Grab a card from the cards file to start the player with
-            if(crntIdx<52){
+            if(crntIdx<NCARDS){
                 getline(cards,cardSel);
                 getline(suits,suitSel);
                 //Display a message of the card and its suit that the player recieved
