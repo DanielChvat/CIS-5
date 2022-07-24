@@ -239,7 +239,7 @@ int main(){
                 cout<<endl;
                 cout<<"Your Cards Total Value is Currently: "<<pVal<<endl<<endl;
                 crntIdx+=1;
-            }
+            }else cout<<"No cards left in deck to draw from"<<endl;
             dVal+=rand()%11+1;
             cout<<"The Dealers Shown Card Value is: "<<dVal<<endl<<endl;
             //Check if the player has won
@@ -253,14 +253,15 @@ int main(){
                 strtMny=money;
                 cout<<"Congratulations You Have Won :) "<<endl;
                 cout<<"Your New Balance is $"<<money<<endl;
-                if(prcChng>0)cout<<"Your money increased by around "<<fixed<<setprecision(0)<<round(prcChng)<<"%"<<endl;
+                //Display how much players money increased rounded to nearest value
+                cout<<"Your money increased by around "<<fixed<<setprecision(0)<<round(prcChng)<<"%"<<endl;
             }else{
                 money-=bet;
                 prcChng=money/strtMny*PERCENT;
                 strtMny=money;
                 cout<<"Sorry You Lost :( "<<endl;
                 cout<<"Your New Balance is "<<fixed<<setprecision(2)<<money<<endl;
-                //Display how much player's money decreased and round to the nearest integer
+                //Display how much player's money decreased and round to the nearest value
                 cout<<"Your money decreased by around "<<fixed<<setprecision(0)<<round(PERCENT-prcChng)<<"%"<<endl;
             }
 
