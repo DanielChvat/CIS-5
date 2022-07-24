@@ -197,7 +197,7 @@ int main(){
                 cin>>bet;
             }
             //Grab a card from the cards file to start the player with
-            if(crntIdx<NCARDS){
+            if(crntIdx<52){
                 getline(cards,cardSel);
                 getline(suits,suitSel);
                 //Display a message of the card and its suit that the player recieved
@@ -239,7 +239,7 @@ int main(){
                 cout<<endl;
                 cout<<"Your Cards Total Value is Currently: "<<pVal<<endl<<endl;
                 crntIdx+=1;
-            }else cout<<"No cards left in deck to draw from"<<endl;
+            }else cout<<"No cards left in deck to draw from";
             dVal+=rand()%11+1;
             cout<<"The Dealers Shown Card Value is: "<<dVal<<endl<<endl;
             //Check if the player has won
@@ -253,7 +253,6 @@ int main(){
                 strtMny=money;
                 cout<<"Congratulations You Have Won :) "<<endl;
                 cout<<"Your New Balance is $"<<money<<endl;
-                //Display how much players money increased rounded to nearest value
                 cout<<"Your money increased by around "<<fixed<<setprecision(0)<<round(prcChng)<<"%"<<endl;
             }else{
                 money-=bet;
@@ -261,7 +260,7 @@ int main(){
                 strtMny=money;
                 cout<<"Sorry You Lost :( "<<endl;
                 cout<<"Your New Balance is "<<fixed<<setprecision(2)<<money<<endl;
-                //Display how much player's money decreased and round to the nearest value
+                //Display how much player's money decreased and round to the nearest Value
                 cout<<"Your money decreased by around "<<fixed<<setprecision(0)<<round(PERCENT-prcChng)<<"%"<<endl;
             }
 
