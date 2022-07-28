@@ -1,4 +1,7 @@
-This version has random card deck generation to a file and some basic input and output. Still missing the ability to actually play the game.
+Things included
+-Random Card Generation
+-Input Prompts
+-Outputs
 
 Things to add:
 -Ability to draw cards for both dealer and Player
