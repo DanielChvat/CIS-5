@@ -1,5 +1,6 @@
 Added:
 -Random Generation of suits for cards into a file
+-10s are now written as T instead of 10 in the cards file
 -More basic input and output
 -Input Validation
 -Game start by giving the player and dealer different cards from the file generated earlier
