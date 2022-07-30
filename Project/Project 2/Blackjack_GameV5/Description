@@ -1,0 +1,5 @@
+Things added/Changed
+-Moved card generation to function
+-Created function to fill arrays to be used later for sorting
+-Created function to determine if the player has won or lost
+-2d Array
