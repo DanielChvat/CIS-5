@@ -57,8 +57,8 @@ int main(){
     string fileNm1,//Name of the file being used the store the cards
            fileNm2,//Name of the file being used to store the suits of each card
            cardSel,//Card at a specific index in Cards.dat
-           suitSel,//Suit at a specific index in Suits.dat
-           crdwSut;//Card and suit added together to be printed for the player
+           suitSel;//Suit at a specific index in Suits.dat
+           //crdwSut;//Card and suit added together to be printed for the player
     string pCards[NCARDS],pSuits[NCARDS];
     //Initialize Variables
     crntIdx=0;
@@ -68,6 +68,7 @@ int main(){
     suits.open(fileNm2,ios::out);
     money=0;
     bet=0;
+    //Ask Player to input amount of money they wish to play with
     cout<<"Blackjack Card Game"<<endl;
     cout<<"Input the Amount of Money in Dollars You Wish to Play With"<<endl;
     cin>>money;
@@ -90,7 +91,7 @@ int main(){
     do{
         pVal=0;
         dVal=0;
-        crdwSut="";
+        //crdwSut="";
         for(int i=0; i<NCARDS;i++){
             pVals[i]=0;
         }
@@ -110,7 +111,7 @@ int main(){
                 cin>>bet;
             }
             //Grab a card from the cards file to start the player with
-            if(crntIdx<52){
+            if(crntIdx<NCARDS){
                 getline(cards,cardSel);
                 //Fill Cards Array
                 filArry(cardSel,crd,NCARDS);
@@ -145,7 +146,6 @@ int main(){
                         if(crntIdx<52){
                             getline(cards,cardSel);
                             getline(suits,suitSel);
-                            //Display a message of the card and its suit that the player recieved
                             pCards[crntIdx]=getCard(crd, crntIdx);
                             pSuits[crntIdx]=getSuit(cSut,crntIdx);
                             //Calculate the current value of all the players cards         
@@ -171,7 +171,7 @@ int main(){
                     }
                 }while(crntIdx<52 && (hit=='Y'||hit=='y'));
                 //Increase dealers card value by a random value from 1 to 10 if their total card value is less than 17
-                while(dVal<17)dVal+=rand()%10+1;
+                while(dVal<17)dVal+=rand()%11+1;
             }
             //Check if the player has won
             win=hasWon(pVal, dVal);
@@ -214,7 +214,7 @@ int main(){
     //Close Files Correctly
     cards.close();
     suits.close();
-    //Output table of cards and suits for player to see
+    //Output info about the game for player to see
     cout<<"Would You Like To See Some Info About The Game?(Y/N)"<<endl;
     cin>>info;
     if(info=='Y' || info=='y'){
