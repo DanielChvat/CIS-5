@@ -1,4 +1,7 @@
 Things added/Changed
 -Added ability for player to tie with dealer
--Created getCard and getSuit functions
--
+-Created getCard function to get a card from the deck at a specific index
+-Created getSuit function to get a cards suit from the deck at a specific index
+-Create getVal function to determine cards value
+-Fixed bug with dealer winning when over 21
+-Added ability for ace to be converted to 1 if value goes over 21
