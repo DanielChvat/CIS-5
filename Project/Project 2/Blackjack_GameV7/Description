@@ -1,0 +1,6 @@
+Changes
+-Added Linear Search
+-Added Selection Sort
+-Added Bubble Sort
+-Added Ability for player to see info about game (ie deck randomly generated, sorted deck, card distrobution)
+-Added message saying thanks for playing
