@@ -2,4 +2,5 @@ Things added/Changed
 -Moved card generation to function
 -Created function to fill arrays to be used later for sorting
 -Created function to determine if the player has won or lost
--2d Array
+-2d Array to store cards and their suits
+-Output of table of cards with suits when player says they dont want to play anymore
