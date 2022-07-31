@@ -1,1 +1,4 @@
-Things added
+Things added/Changed
+-Added ability for player to tie with dealer
+-Created getCard and getSuit functions
+-
